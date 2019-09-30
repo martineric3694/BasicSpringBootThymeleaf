@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Next Page</title>
+</head>
+<body>
+	<h1>Welcome to Next Page</h1>
+	<span th:if="${object == null}">
+		<h2 th:text="${message}">Pesan</h2>
+	</span>
+	<span th:if="${object != null}">
+		<h2 th:text="${object.nama}">nama</h2>
+		<h2 th:text="${object.kelas}">kelas</h2>
+	</span>
+</body>
+</html>

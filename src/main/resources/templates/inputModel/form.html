@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Form Input Model</title>
+</head>
+<body>
+	<h1>Form Input Model Page</h1>
+	<form action="#" th:action="@{/home/inputModel}" th:object="${paramModel}" method="post">
+		<table>
+			<tr>
+				<td>Nama</td><td><input type="text" th:field="*{nama}"></td>
+			</tr>
+			<tr>
+				<td>Kelas</td><td><input type="text" th:field="*{kelas}"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Kirim"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
